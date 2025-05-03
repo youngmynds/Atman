@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@MAN - Fashion Store</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <!-- Font Awesome -->
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<!-- Bootstrap Bundle with Popper.js -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+
+<link rel="icon" href="/assets/images/favicon.ico">
+<!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script> -->
+ 
+  </head>
+  <body>
+     <!-- Navigation -->
+     <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+      <div class="container">
+       
+        <div class="menu-toggle-container">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="close-icon" id="closeToggle"></div>
+        </div>
+        
+        <a class="navbar-brand" href="/">
+          <img src="/assets/images/Final_website_logo.jpg" alt="Logo" class="logo" />
+        </a>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about-us/">About Us</a>
+            </li>
+             <!-- Desktop Contact Us (no icon) -->
+        <!-- <li class="nav-item desktop-contact">
+          <a class="nav-link" href="https://api.whatsapp.com/send/?phone=9894128038&text&type=phone_number&app_absent=0" target="_blank">
+            Contact Us
+          </a>
+        </li> -->
+        <!-- Mobile Contact Us (with WhatsApp icon) -->
+        <!-- <li class="nav-item mobile-contact">
+          <a class="nav-link whatsapp-link" href="https://api.whatsapp.com/send/?phone=9894128038&text&type=phone_number&app_absent=0" target="_blank">
+            <i class="fab fa-whatsapp whatsapp-icon"></i> Contact Us
+          </a>
+        </li> -->
+          </ul>
+         <!-- Desktop and Tablet View -->
+         <ul class="navbar-nav desktop-ul">
+          <li class="nav-item">
+            <div class="phone-icon">
+              <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="30" cy="30" r="30" fill="#000000" />
+                <path
+                  d="M40 33.5c-1.76 0-3.48-.27-5.09-.77-.79-.23-1.76.02-2.21.47l-3.2 3.2c-4.08-2.19-7.45-5.54-9.69-9.64l3.2-3.21c.48-.48.71-1.18.49-1.87-.5-1.6-.77-3.28-.77-5.02 0-1.1-.9-2-2-2h-5c-1.1 0-2 .9-2 2 0 15.79 12.85 28.64 28.64 28.64 1.1 0 2-.9 2-2v-5c-.01-1.1-.91-2-2.01-2z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+            <span class="nav-link">Call Us: +91 9894128038</span>
+          </li>
+        </ul>
+
+        <!-- Mobile View -->
+        <ul class="navbar-nav mobile-ul">
+          <li class="nav-item">
+            <a class="nav-link" href="tel:+919894128038">Call Us: <span style="text-decoration: underline;">+91 9894128038</span></a>
+          </li>
+        </ul>
+        </div>
+      </div>
+    </nav>
+    
+
+
+  
+      <!-- Hero Section -->
+      <section class="container">
+        <div class="hero-content wow fadeInUp" data-wow-delay="800">
+            <div class="hero-text">
+                <h1>Welcome to Atman</h1>
+                <p>
+                    <strong>Where Style Meets Soul</strong> Welcome to Atman – a destination where timeless elegance meets modern trends. As a trusted multi-brand store, we offer a curated collection of clothing, accessories, and lifestyle essentials that embody class, character, and confidence.
+                </p>
+                <p>
+                    Founded to redefine men’s fashion in Coimbatore, Atman has grown into a celebrated name — synonymous with quality, style, and individuality.
+                </p>
+                <p>
+                    Whether you're dressing for boardroom brilliance, weekend ease, or a grand celebration, Atman is your trusted style companion. Visit our inspiring store or explore our seamless online platform — where premium fashion is always just a click away.
+                    Thank you for choosing Atman — where every garment tells a story and every visit is a memorable experience.
+                </p>
+            </div>
+            <div class="hero-image">
+                <img src="/assets/images/about.jpeg" alt="Luxury Store Interior" />
+            </div>
+        </div>
+    </section>
+  
+
+        
+       <!-- Milestones Section -->
+<!-- <section class="milestones">
+  <div class="container">
+    <div class="title text-center wow fadeInUp" data-wow-delay="0.6s">
+      <h2>Our Success</h2>
+      <div class="underline"></div>
+    </div>
+    <div class="milestones-grid">
+      <div class="milestone-card">
+        <div class="number" data-number="34">0</div>
+        <div class="label">Years of Excellence</div>
+      </div>
+      <div class="milestone-card">
+        <div class="number" data-number="5000">0</div>
+        <div class="label">Happy Customers</div>
+      </div>
+      <div class="milestone-card">
+        <div class="number" data-number="30">0</div>
+        <div class="label">Top Brands</div>
+      </div>
+    </div>
+  </div>
+</section> -->
+     
+<section class="stats-section">
+  <div class="container3">
+    <div class="title">
+      <h2>Decades Of Trust</h2>
+      <div class="underline"></div>
+    </div>
+    <div class="row1">
+      <!-- First Stat Box -->
+      <div class="col-md-4">
+        <div class="stats-box">
+          <div class="stat-icon">
+            <div class="counter" data-count="10">0</div><span class="plus-icon">+</span>
+          </div>
+          <div class="stats-text">Years of Excellence</div>
+        </div>
+      </div>
+
+      <!-- Second Stat Box -->
+      <div class="col-md-4">
+        <div class="stats-box">
+          <div class="stat-icon">
+            <div class="counter" data-count="50000">0</div><span class="plus-icon">+</span>
+          </div>
+          <div class="stats-text">Happy Customers</div>
+        </div>
+      </div>
+
+      <!-- Third Stat Box -->
+      <div class=" col-md-4">
+        <div class="stats-box">
+          <div class="stat-icon">
+            <div class="counter" data-count="30">0</div><span class="plus-icon">+</span>
+          </div>
+          <div class="stats-text">Top Brands</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- What Defines Us Section -->
+      <!-- <section class="features">
+        <div class="container">
+          <div class="title text-center wow fadeInUp" data-wow-delay="0.6s">
+            <h2>Define Us</h2>
+            <div class="underline"></div>
+          </div>
+            <div class="features-grid">
+              <div class="feature-card">
+                  <img src="/assets/icons/crown.png" alt="Crown" class="feature-icon" />
+                  <h3>Authenticity</h3>
+                  <p>Only original branded wear, carefully sourced and verified</p>
+              </div>
+              <div class="feature-card">
+                  <img src="/assets/icons/handshake.png" alt="Diamond" class="feature-icon" />
+                  <h3>Quality</h3>
+                  <p>Handpicked premium fabrics that stand the test of time</p>
+              </div>
+              <div class="feature-card">
+                  <img src="/assets/icons/Elegnace.png" alt="Bow Tie" class="feature-icon" />
+                  <h3>Elegance</h3>
+                  <p>Sophisticated style curation for the modern gentleman</p>
+              </div>
+              <div class="feature-card">
+                  <img src="/assets/icons/Quality.png" alt="Heart" class="feature-icon" />
+                  <h3>Service</h3>
+                  <p>Personalized shopping experience tailored to your needs</p>
+              </div>
+          </div>
+        </div>
+    </section>
+     -->
+      
+     <section class="features">
+      <div class="container3">
+        <div class="title text-center wow fadeInUp" data-wow-delay="0.6s">
+          <h2>Define Us</h2>
+          <div class="underline"></div>
+        </div>
+        <div class="row">
+          <!-- First Card -->
+          <div class="col-12 col-md-3">
+            <div class="feature-card">
+              <img src="/assets/icons/Authenticity.gif" alt="King Crown" class="feature-icon" />
+              <h3>Authenticity</h3>
+              <p>Only original branded wear, carefully sourced and verified</p>
+            </div>
+          </div>
+          <!-- Second Card -->
+          <div class="col-12 col-md-3">
+            <div class="feature-card">
+              <img src="/assets/icons/handshake.gif" alt="Diamond" class="feature-icon" />
+              <h3>Quality</h3>
+              <p>Handpicked premium fabrics that stand the test of time</p>
+            </div>
+          </div>
+          <!-- Third Card -->
+          <div class="col-12 col-md-3">
+            <div class="feature-card">
+              <img src="/assets/icons/Elegnace.gif" alt="Bow Tie" class="feature-icon" />
+              <h3>Elegance</h3>
+              <p>Sophisticated style curation for the modern gentleman</p>
+            </div>
+          </div>
+          <!-- Fourth Card -->
+          <div class="col-12 col-md-3">
+            <div class="feature-card">
+              <img src="/assets/icons/Quality.gif" alt="Heart" class="feature-icon" />
+              <h3>Service</h3>
+              <p>Personalized shopping experience tailored</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+   
+
+<footer>
+  <!-- footer-area-start -->
+  <div
+    class="footer py-5"
+  >
+    <div class="it-footer-wrap">
+      <div class="container">
+        <div class="row">
+          <!-- Logo and Social Links -->
+          <div
+            class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-50 wow itfadeUp"
+            data-wow-duration=".9s"
+            data-wow-delay=".3s"
+          >
+            <div class="it-footer-widget footer-col-5" >
+              <img
+        src="/assets/images/Backup_of_Final_website_logo-removebg.png"
+        alt="Logo"
+        class="logo footer-logo"
+      />
+              <div class="it-footer-text pb-5">
+                <p>
+                  Premium menswear for the discerning gentleman. Crafting timeless pieces with exceptional attention to detail.
+                </p>
+              </div>
+              <h4 class="it-footer-title">Reach Us</h4>
+              <div class="it-footer-social">
+                   
+                    
+                <a href="https://api.whatsapp.com/send/?phone=9894128038&text&type=phone_number&app_absent=0" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/atman_originals/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/DYD2015/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="/"><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Subscribe -->
+          <div
+            class="col-xl-4 col-lg-3 col-md-6 col-sm-8 mb-50 wow itfadeUp"
+            data-wow-duration=".9s"
+            data-wow-delay=".9s"
+          >
+            <div class="address-section">
+              <div class="address-icon">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="address-text">
+                
+                <span class="address-locations"><h5>Address</h5>
+                  <p>70, Shanmuga Theatre Road,</p>
+                  <p>Sukrawar Pettai, R.S. Puram,</p>
+                  <p>Coimbatore, Tamil Nadu 641002</p></span>
+              </div>
+            </div>
+            <div class="address-section">
+              <div class="address-icon">
+                <div class="it-footer-top-icon">
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="phone-svg-icon">
+                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+              <div class="address-text">
+                <span class="address-label">Phone:</span><br />
+                <a href="tel:+919894128038">+91 9894128038</a>
+              </div>
+            </div>
+            <div class="address-section">
+              <div class="address-icon">
+                <span><i class="fas fa-envelope"></i></span>
+              </div>
+              <div class="address-text">
+                <span class="address-label">Email:</span><br />
+
+                <a
+                  href="mailto:atman21324@gmail.com"
+                  title="Send an email to Trichoguru"
+                  >atman21324@gmail.com</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Our Services -->
+          <div
+            class="col-xl-5 col-lg-7 col-md-6 col-sm-6 mb-50 wow itfadeUp mx-auto"
+            data-wow-duration=".9s"
+            data-wow-delay=".5s"
+          >
+            <div class="it-footer-widget footer-col-6 text-left">
+              <h4 class="it-footer-title">Locate Us</h4>
+
+              <div class="map-container">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.417490985639!2d76.95353867355543!3d11.00727005489637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba859496894d883%3A0x734e43b2173cefa1!2sATMAN!5e0!3m2!1sen!2sin!4v1744642301365!5m2!1sen!2sin"
+                  width="100%"
+                  height="250"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer-area-end -->
+
+  <!-- copy-right area start -->
+  <div class="it-copyright-area it-copyright-height">
+    <div class="container">
+      <div class="row">
+        <div
+          class="col-12 wow itfadeUp"
+          data-wow-duration=".9s"
+          data-wow-delay=".3s"
+        >
+          <div class="it-copyright-text style-2 text-center">
+            <p class="mb-0">
+              <span> Developed by Young Mynds Infotech</span> ||
+              <a href="/terms-and-conditions/" class="text-primary">Terms and Conditions</a>
+            </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- copy-right area end -->
+</footer>
+
+<!-- 
+<div class="back-to-top" id="back-to-top">
+  <button aria-label="Scroll to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+</div> -->
+<div class="back-to-top" id="back-to-top">
+  <button aria-label="Scroll to top">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#4a4a4a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <!-- Simple arrow icon as provided -->
+      <path d="M12 3L12 21"></path>
+      <path d="M5 10L12 3L19 10"></path>
+    </svg>
+  </button>
+</div>
+<div class="whatsapp-chat-widget">
+  <a href="https://api.whatsapp.com/send/?phone=9894128038&text=Hello%20ATMAN,%20I'm%20interested%20in%20your%20collection&type=phone_number&app_absent=0" target="_blank" class="whatsapp-chat-btn">
+    <div class="whatsapp-icon">
+      <!-- SVG WhatsApp icon -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="24" height="24" fill="currentColor">
+        <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+      </svg>
+    </div>
+    <div class="whatsapp-text">
+      <span class="default-text">Chat with us</span>
+      <span class="hover-text">Chat now</span>
+    </div>
+  </a>
+</div>
+
+
+
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const featureCards = document.querySelectorAll('.feature-card');
+    const section = document.querySelector('.features'); // Target the section
+
+    // Create an intersection observer to observe the section
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                featureCards.forEach((card, index) => {
+                    setTimeout(() => {
+                        card.classList.add('active'); // Add active class to trigger animation
+                    }, index * 100); // Stagger the animations by 100ms for each card (faster)
+                });
+                observer.disconnect(); // Stop observing once the animation is triggered
+            }
+        });
+    }, {
+        threshold: 0.5 // Trigger when 50% of the section is visible in the viewport
+    });
+
+    observer.observe(section); // Start observing the section
+});
+
+ </script>
+ 
+ 
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+   
+  
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script src="/assets/js/mobile-nav.js"></script>
+    <script src="/assets/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- <script src="/assets/js/testimonial.js"></script> -->
+    <script async src="//www.instagram.com/embed.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- <script>
+      // Function to animate the numbers
+function animateNumbers() {
+  const milestoneCards = document.querySelectorAll('.milestone-card .number');
+  
+  milestoneCards.forEach(card => {
+    const targetNumber = parseInt(card.getAttribute('data-number'), 10);
+    let currentNumber = 0;
+
+    // Function to update the number
+    const updateNumber = () => {
+      if (currentNumber < targetNumber) {
+        currentNumber += Math.ceil(targetNumber / 100); // Increment by a small amount
+        card.textContent = currentNumber;
+        setTimeout(updateNumber, 20); // Adjust speed by changing timeout duration
+      } else {
+        card.textContent = targetNumber + "+"; // Ensure the number shows as completed
+      }
+    };
+
+    updateNumber();
+  });
+}
+
+// Intersection Observer to trigger the animation when the section enters the viewport
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      animateNumbers();
+      observer.disconnect(); // Stop observing once the animation is triggered
+    }
+  });
+}, {
+  threshold: 0.5 // Trigger when 50% of the section is visible
+});
+
+// Start observing the milestones section
+const milestonesSection = document.querySelector('.milestones');
+observer.observe(milestonesSection);
+
+    </script> -->
+
+
+
+ <script>
+  // Animation to reveal stats boxes
+  const statsBoxes = document.querySelectorAll('.stats-box');
+
+  function animateBoxes() {
+      statsBoxes.forEach((box, index) => {
+          setTimeout(() => {
+              box.classList.add('active');
+
+              // Add pulse animation to the box after it appears
+              setTimeout(() => {
+                  box.classList.add('pulse');
+              }, 500);
+
+              // Animate counter
+              const counter = box.querySelector('.counter[data-count]');
+              const target = parseInt(counter.getAttribute('data-count'));
+              let count = 0;
+
+              // Calculate step size based on target value
+              let step = target > 1000 ? 500 : (target > 100 ? 5 : 1);
+              let duration = 2000; // 2 seconds for animation
+              let steps = target / step;
+              let interval = Math.floor(duration / steps);
+
+              const counterAnimation = setInterval(() => {
+                  count += step;
+                  if (count >= target) {
+                      count = target;
+                      clearInterval(counterAnimation);
+                  }
+                  counter.innerText = count;
+              }, interval);
+          }, index * 300); // Stagger the animations
+      });
+  }
+
+  // Start animations when page loads
+  document.addEventListener('DOMContentLoaded', animateBoxes);
+
+  // Restart animations when section comes into view
+  function isInViewport(element) {
+      const rect = element.getBoundingClientRect();
+      return (
+          rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
+          rect.bottom >= 0
+      );
+  }
+
+  function checkView() {
+      const section = document.querySelector('.stats-section');
+      if (isInViewport(section)) {
+          animateBoxes();
+          window.removeEventListener('scroll', checkView);
+      }
+  }
+
+  window.addEventListener('scroll', checkView);
+</script>
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+      const heroContent = document.querySelector('.hero-content');
+      const heroImage = document.querySelector('.hero-image');
+  
+      // Add active class to trigger animations
+      setTimeout(() => {
+          heroContent.classList.add('active');
+          heroImage.classList.add('active');
+      }, 300); // Delay to allow for a staggered effect
+  });
+  </script>
+
+  
+  </body>
+</html>
+
